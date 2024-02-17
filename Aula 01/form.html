@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .label {
+            display: block;
+            margin-top: 5px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+        }
+
+        .radio-group .label {
+            display: flex;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Exemplo de Formulário</h2>
+        <form action="">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu Nome" required>
+
+            <label for="pais">País:</label>
+            <select name="pais" id="pais">
+                <option value="brasil">Brasil</option>
+                <option value="argentina">Argentina</option>
+                <option value="canada">Canadá</option>
+                <option value="china">China</option>
+                <option value="egito">Egito</option>
+                <option value="franca">França</option>
+                <option value="alemanha">Alemanha</option>
+                <option value="india">Índia</option>
+                <option value="italia">Itália</option>
+                <option value="japao">Japão</option>
+                <option value="mexico">México</option>
+                <option value="russia">Rússia</option>
+                <option value="espanha">Espanha</option>
+                <option value="reinounido">Reino Unido</option>
+                <option value="estadosunidos">Estados Unidos</option>
+                <option value="australia">Austrália</option>
+            </select>
+
+            <label for="data_nasc">Data de Nascimento:</label>
+            <input type="date" name="data_nasc" id="data_nasc">
+
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" placeholder="Digite sua idade">
+
+            <label for="hora">Hora:</label>
+            <input type="time" name="hora" id="hora">
+
+            <label for="bio">
+                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Sua Biografia"></textarea>
+            </label>
+
+            <label for="sexo">Sexo:</label>
+            <div class="radio-group">
+                <label></label><input type="radio" name="sexo">Masculino</label>
+                <label></label><input type="radio" name="sexo">Feminino</label>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+
+</html>
